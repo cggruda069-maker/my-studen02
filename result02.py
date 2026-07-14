@@ -4,10 +4,10 @@ import google.generativeai as genai
 
 
 # Gemini API Key
-GEMINI_API_KEY = "AQ.Ab8RN6Jt065HaQQag4VCIc9L5JylX_DpL9kJgPeYTn4U7eMm5Q"
-
+api_key = st.secrets[ "GEMINI_API_KEY"]
+genai.configure(api_key=api_key)
+google_api_key=st.secrets['GOOGLR_MAP_API_KEY"]
 genai.configure(api_key=GEMINI_API_KEY)
-
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 st.title("🎓 AI Student Result Analyzer")

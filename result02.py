@@ -7,7 +7,7 @@ import google.generativeai as genai
 api_key = st.secrets[ "GEMINI_API_KEY"]
 genai.configure(api_key=api_key)
 
-genai.configure(api_key=("GEMINI_API")
+genai.configure(api_key="GEMINI_API
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 st.title("🎓 AI Student Result Analyzer")
